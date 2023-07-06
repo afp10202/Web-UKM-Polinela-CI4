@@ -8,7 +8,7 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-6">
-                    <h1>Tambah Film</h1>
+                    <h1>Tambah UKM</h1>
                     </div>
                     <div class="col-md-6 text-end">
                     <a href="/ukm/"class="btn btn-primary">Kembali</a>
@@ -39,7 +39,9 @@
 
                         <div class="col-md-6">
                             <label for="information" class="form-label">Informasi</label>
-                            <input type="text" class="form-control <?= isset($errors['information']) ? 'is-invalid ' : ''; ?>" id="information" name="information" value=" <?= old('information'); ?>">
+                            <textarea class="form-control" cols="50" row="10"></textarea>
+                           <p <?= isset($errors['information']) ? 'is-invalid ' : ''; ?> id="information" name="information" value=" <?= old('information'); ?>"></p>
+                          
                             <?php if (isset($errors['information'])) : ?>
                                 <div class=" invalid-feedback">
                                     <?= $errors['information'] ?>
@@ -48,7 +50,8 @@
                         </div>
                         <div class="col-md-6">
                             <label for="visi" class="form-label">Visi</label>
-                            <input type="text" class="form-control <?= isset($errors['visi']) ? 'is-invalid ' : ''; ?>" id="visi" name="visi" value=" <?= old('visi'); ?>">
+                            <textarea class="form-control" cols="50" row="10"></textarea>
+                            <p  <?= isset($errors['visi']) ? 'is-invalid ' : ''; ?> id="visi" name="visi" value=" <?= old('visi'); ?>"><p>
                             <?php if (isset($errors['visi'])) : ?>
                                 <div class=" invalid-feedback">
                                     <?= $errors['visi'] ?>
@@ -57,7 +60,8 @@
                         </div>
                         <div class="col-md-6">
                             <label for="misi" class="form-label">Misi</label>
-                            <input type="text" class="form-control <?= isset($errors['misi']) ? 'is-invalid ' : ''; ?>" id="misi" name="misi" value=" <?= old('misi'); ?>">
+                            <textarea class="form-control" cols="50" row="10"></textarea>
+                            <p  <?= isset($errors['misi']) ? 'is-invalid ' : ''; ?> id="misi" name="misi" value=" <?= old('misi'); ?>"></p>
                             <?php if (isset($errors['misi'])) : ?>
                                 <div class=" invalid-feedback">
                                     <?= $errors['misi'] ?>
