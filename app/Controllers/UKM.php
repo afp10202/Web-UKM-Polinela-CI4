@@ -25,4 +25,8 @@ class UKM extends BaseController
         $data['semuaukm'] = $this->ukm->getAllData();
         return view('ukm', $data);
     }
+    public function add(){ //tambah data
+       
+        return view('add');
+    }
 }
