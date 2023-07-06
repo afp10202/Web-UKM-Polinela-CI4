@@ -3,22 +3,25 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class FilmModel extends Model{
+class UKMModel extends Model{
 
-    protected $table = "db_ukm";
+    protected $table = "tb_ukm";
     protected $primarykey = "id_ukm";
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['nama_film', 'id_genre', 'duration', 'cover']; 
+    protected $allowedFields = ['nama_ukm', 'logo_ukm', 'informasi', 'visi','misi','foto_satu','foto_dua']; 
     
     public function getAllData()
     {
-        return $this->join('genre', 'film.id_genre = genre.id_genre')->findAll();
+        return $this->findAll();
     }
+    
+    
+    // public function getAllData()
+    // {
+    //     return $this->join('genre', 'film.id_genre = genre.id_genre')->findAll();
+    // }
 
-    public function getDataById($id)
-    {
-        return $this->find($id);
-    }
+    
 
     
 
