@@ -67,4 +67,9 @@ class UKM extends BaseController
         return redirect()->to('ukm');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
 }
