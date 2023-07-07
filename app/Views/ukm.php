@@ -32,7 +32,7 @@
                 foreach ($semuaukm as $ukm) : ?>
                     <tr>
                         <td><?= $i++; ?></td>
-                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"  style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;""></td>
+                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"  style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
                         <td style='font-size: 14px;'><?= $ukm['nama_ukm'] ?></td>
                         <td>
                             <div class="scrollable">
