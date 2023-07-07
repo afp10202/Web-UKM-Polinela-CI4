@@ -13,8 +13,8 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table">
-            <thead>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Logo</th>
@@ -32,8 +32,20 @@
                 foreach ($semuaukm as $ukm) : ?>
                     <tr>
                         <td><?= $i++; ?></td>
-                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"  style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
-                        <td style='font-size: 14px;'><?= $ukm['nama_ukm'] ?></td>
+                        <td style="text-align: center;">
+                        <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"   style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#logoModal<?= $ukm['id_ukm'] ?>">
+                        <!--Modal-->
+                        <div class="modal fade" id="logoModal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="logoModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-content">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="max-width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style='font-size: 14px; text-align: center;'><?= $ukm['nama_ukm'] ?></td>
                         <td>
                             <div class="scrollable">
                                 <p><?= $ukm['informasi'] ?></p>
@@ -49,8 +61,32 @@
                                 <p><?= $ukm['misi'] ?></p>
                             </div>
                         </td>
-                        <td><img src="/assets/foto/<?= $ukm['foto_satu'] ?>"  alt="Foto 1" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;" ></td>
-                        <td><img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
+                        <td style="text-align:center;">
+                        <img src="/assets/foto/<?= $ukm['foto_satu'] ?>"  alt="Foto 1" style="width: 50px; height: 50px; display: block; margin: 0" auto; data-bs-toggle="modal" data-bs-target="#fotoSatuModal<?= $ukm['id_ukm'] ?>">
+                        <!-- Modal -->
+                        <div class="modal fade" id="fotoSatuModal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="fotoSatuModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="/assets/foto/<?= $ukm['foto_satu'] ?>" alt="Foto 1" style="max-width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="text-align:center;">
+                        <img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#fotoDuaModal<?= $ukm['id_ukm'] ?>">
+                            <!-- Modal -->
+                            <div class="modal fade" id="fotoDuaModal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="fotoDuaModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="max-width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                         <td>
                             <a href="/ukm/update/<?= $ukm['id_ukm']; ?>" class="btn btn-success">Update</a>
                             <a class="btn btn-danger" onclick="return confirmDelete(<?= $ukm['id_ukm'] ?>)">Delete</a>
