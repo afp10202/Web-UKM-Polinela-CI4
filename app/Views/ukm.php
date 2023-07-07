@@ -13,25 +13,19 @@
         </div>
     </div>
     <div class="table-responsive">
+        <table class="table">
+            <thead>
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Logo</th>
-                    <th scope="col">Nama UKM</th>
-                    <th scope="col">Informasi</th>
-                    <th scope="col">Visi</th>
-                    <th scope="col">Misi</th>
-                    <th scope="col">Foto 1</th>
-                    <th scope="col">Foto 2</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php $i = 1;
-                foreach ($semuaukm as $ukm) : ?>
+@
+                <?php foreach ($semuaukm as $ukm) : ?>
                     <tr>
                         <td><?= $i++; ?></td>
+                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"  style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
+                        <td style='font-size: 14px;'><?= $ukm['nama_ukm'] ?></td>
                         <td style="text-align: center;">
                         <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"   style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#logoModal<?= $ukm['id_ukm'] ?>">
                         <!--Modal-->
@@ -49,18 +43,11 @@
                         <td>
                             <div class="scrollable">
                                 <p><?= $ukm['informasi'] ?></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="scrollable">
-                                <p><?= $ukm['visi'] ?></p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="scrollable">
                                 <p><?= $ukm['misi'] ?></p>
                             </div>
                         </td>
+                        <td><img src="/assets/foto/<?= $ukm['foto_satu'] ?>"  alt="Foto 1" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;" ></td>
+                        <td><img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
                         <td style="text-align:center;">
                         <img src="/assets/foto/<?= $ukm['foto_satu'] ?>"  alt="Foto 1" style="width: 50px; height: 50px; display: block; margin: 0" auto; data-bs-toggle="modal" data-bs-target="#fotoSatuModal<?= $ukm['id_ukm'] ?>">
                         <!-- Modal -->
