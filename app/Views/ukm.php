@@ -32,7 +32,7 @@
                 foreach ($semuaukm as $ukm) : ?>
                     <tr>
                         <td><?= $i++; ?></td>
-                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="width: 100px;"></td>
+                        <td><img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM"  style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;""></td>
                         <td style='font-size: 14px;'><?= $ukm['nama_ukm'] ?></td>
                         <td>
                             <div class="scrollable">
@@ -49,8 +49,8 @@
                                 <p><?= $ukm['misi'] ?></p>
                             </div>
                         </td>
-                        <td><img src="/assets/foto/<?= $ukm['foto_satu'] ?>" alt="Foto 1" style="width: 150px;"></td>
-                        <td><img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="width: 150px;"></td>
+                        <td><img src="/assets/foto/<?= $ukm['foto_satu'] ?>"  alt="Foto 1" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;" ></td>
+                        <td><img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2" style="display: block; margin: 0 auto; text-align: center; width: 180px; height: 200px;"></td>
                         <td>
                             <a href="/ukm/update/<?= $ukm['id_ukm']; ?>" class="btn btn-success">Update</a>
                             <a class="btn btn-danger" onclick="return confirmDelete(<?= $ukm['id_ukm'] ?>)">Delete</a>
