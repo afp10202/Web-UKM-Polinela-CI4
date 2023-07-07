@@ -7,7 +7,7 @@
         <?php foreach ($semuaukm as $ukm) : ?>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" class="card-img-top" alt="Logo UKM">
+                    <img src="/assets/logo/<?= $ukm['logo_ukm'] ?>" class="card-img-top" alt="Logo UKM">
                     <div class="card-body">
                         <h5 class="card-title text-center"><?= $ukm['nama_ukm'] ?></h5>
                         <div class="text-center">
@@ -18,7 +18,6 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Modal -->
             <!-- Modal -->
 <div class="modal fade" id="modal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

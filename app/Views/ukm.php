@@ -32,13 +32,13 @@
                     <tr>
                         <td><?= $i++; ?></td>
                         <td style="text-align: center;">
-                            <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#logoModal<?= $ukm['id_ukm'] ?>">
+                            <img src="/assets/logo/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#logoModal<?= $ukm['id_ukm'] ?>">
                             <!-- Modal -->
                             <div class="modal fade" id="logoModal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="logoModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <img src="/assets/foto/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="max-width: 100%;">
+                                            <img src="/assets/logo/<?= $ukm['logo_ukm'] ?>" alt="Logo UKM" style="max-width: 100%;">
                                         </div>
                                     </div>
                                 </div>
