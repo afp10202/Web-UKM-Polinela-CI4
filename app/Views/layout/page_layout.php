@@ -77,5 +77,18 @@
     </footer>
 
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+    <?php if (session()->getFlashdata('success')) : ?>
+        <script>
+            swal({
+                title: "Informasi",
+                text: "<?= session()->getFlashdata('success') ?>",
+                icon: "success",
+                button: "OK",
+            });
+        </script>
+
+        <?php endif; ?>
+        
 </body>
 </html>

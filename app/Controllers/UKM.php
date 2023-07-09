@@ -29,6 +29,7 @@ class UKM extends BaseController
     public function add()
     { //tambah data
         $data['semuaukm'] = $this->ukm->getAllData();
+        $data["errors"] = session('errors');
         return view('add', $data);
     }
 
@@ -99,7 +100,7 @@ class UKM extends BaseController
         ];
 
         $this->ukm->save($data);
-
+        session()->setFlashdata('success', 'Data berhasil ditambahkan.');
         return redirect()->to('ukm');
     }
 
