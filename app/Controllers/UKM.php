@@ -34,6 +34,41 @@ class UKM extends BaseController
 
     public function insert()
     {
+        $validation = $this->validate([
+            'nama_ukm' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Nama UKM harus diisi'
+                ]
+            ],
+            'logo_ukm' => [
+                'rules' => 'mime_in[logo_ukm,image/jpg,image/jpeg,image/png]|max_size[logo_ukm,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Logo harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Logo melebihi batas maksimum'
+                ]
+            ],
+            'foto_satu' => [
+                'rules' => 'mime_in[foto_satu,image/jpg,image/jpeg,image/png]|max_size[foto_satu,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Foto 1 harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Foto 1 melebihi batas maksimum'
+                ]
+            ],
+            'foto_dua' => [
+                'rules' => 'mime_in[foto_dua,image/jpg,image/jpeg,image/png]|max_size[foto_dua,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Foto 2 harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Foto 2 melebihi batas maksimum'
+                ]
+            ]
+        ]);
+
+        if (!$validation) {
+            $errors = \Config\Services::validation()->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
+        }
+
         $logoUkm = $this->request->getFile('logo_ukm');
         $fotoSatu = $this->request->getFile('foto_satu');
         $fotoDua = $this->request->getFile('foto_dua');
@@ -64,8 +99,10 @@ class UKM extends BaseController
         ];
 
         $this->ukm->save($data);
+
         return redirect()->to('ukm');
     }
+
 
     public function about()
     {
