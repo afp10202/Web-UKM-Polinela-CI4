@@ -32,6 +32,12 @@ class UKM extends BaseController
         $data["errors"] = session('errors');
         return view('add', $data);
     }
+    public function update($id) //tambah data
+    { 
+        $data['semuaukm'] = $this->ukm->getDataById($id);
+        $data["errors"] = session('errors');
+        return view('update', $data);
+    }
 
     public function insert()
     {
@@ -64,6 +70,7 @@ class UKM extends BaseController
                 ]
             ]
         ]);
+        
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
@@ -109,5 +116,116 @@ class UKM extends BaseController
     {
         return view('about');
     }
+    public function edit()
+    {
+        $validation = $this->validate([
+            'nama_ukm' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Nama UKM harus diisi'
+                ]
+            ],
+            'logo_ukm' => [
+                'rules' => 'mime_in[logo_ukm,image/jpg,image/jpeg,image/png]|max_size[logo_ukm,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Logo harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Logo melebihi batas maksimum'
+                ]
+            ],
+            'foto_satu' => [
+                'rules' => 'mime_in[foto_satu,image/jpg,image/jpeg,image/png]|max_size[foto_satu,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Foto 1 harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Foto 1 melebihi batas maksimum'
+                ]
+            ],
+            'foto_dua' => [
+                'rules' => 'mime_in[foto_dua,image/jpg,image/jpeg,image/png]|max_size[foto_dua,2048]',
+                'errors' => [
+                    'mime_in' => 'Tipe file pada Kolom Foto 2 harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Foto 2 melebihi batas maksimum'
+                ]
+            ]
+        ]);
 
+        if (!$validation) {
+            $errors = \Config\Services::validation()->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
+        }
+
+        // ambil data lama
+        $ukm = $this->ukm->find($this->request->getPost('id_ukm'));
+
+        // tambahkan request id
+        $data = [
+            'id_ukm' => $this->request->getPost('id_ukm'),
+            'nama_ukm' => $this->request->getPost('nama_ukm'),
+            'visi' => $this->request->getPost('visi'),
+            'misi' => $this->request->getPost('misi'),
+            'informasi' => $this->request->getPost('informasi')
+        ];
+
+        // cek logo apakah ada logo yang diupload
+        $logo = $this->request->getFile('logo_ukm');
+
+        if ($logo->isValid() && !$logo->hasMoved()) {
+            // generate nama file yang unik
+            $logoName = $logo->getRandomName();
+            // pindahkan file ke direktori penyimpanan
+            $logo->move(ROOTPATH . 'public/assets/logo/', $logoName);
+            // hapus file lama jika ada
+            if ($ukm['logo_ukm']) {
+                unlink(ROOTPATH . 'public/assets/logo/' . $ukm['logo_ukm']);
+            }
+            // jika ada, tambahkan array logo_ukm pada variabel $data
+            $data['logo_ukm'] = $logoName;
+        } else {
+            // jika tidak ada logo yang diupload, gunakan data lama
+            $data['logo_ukm'] = $ukm['logo_ukm'];
+        }
+
+        // cek foto_satu apakah ada foto yang diupload
+        $fotoSatu = $this->request->getFile('foto_satu');
+
+        if ($fotoSatu->isValid() && !$fotoSatu->hasMoved()) {
+            // generate nama file yang unik
+            $fotoSatuName = $fotoSatu->getRandomName();
+            // pindahkan file ke direktori penyimpanan
+            $fotoSatu->move(ROOTPATH . 'public/assets/foto/', $fotoSatuName);
+            // hapus file lama jika ada
+            if ($ukm['foto_satu']) {
+                unlink(ROOTPATH . 'public/assets/foto/' . $ukm['foto_satu']);
+            }
+            // jika ada, tambahkan array foto_satu pada variabel $data
+            $data['foto_satu'] = $fotoSatuName;
+        } else {
+            // jika tidak ada foto satu yang diupload, gunakan data lama
+            $data['foto_satu'] = $ukm['foto_satu'];
+        }
+
+        // cek foto_dua apakah ada foto yang diupload
+        $fotoDua = $this->request->getFile('foto_dua');
+
+        if ($fotoDua->isValid() && !$fotoDua->hasMoved()) {
+            // generate nama file yang unik
+            $fotoDuaName = $fotoDua->getRandomName();
+            // pindahkan file ke direktori penyimpanan
+            $fotoDua->move(ROOTPATH . 'public/assets/foto/', $fotoDuaName);
+            // hapus file lama jika ada
+            if ($ukm['foto_dua']) {
+                unlink(ROOTPATH . 'public/assets/foto/' . $ukm['foto_dua']);
+            }
+            // jika ada, tambahkan array foto_dua pada variabel $data
+            $data['foto_dua'] = $fotoDuaName;
+        } else {
+            // jika tidak ada foto dua yang diupload, gunakan data lama
+            $data['foto_dua'] = $ukm['foto_dua'];
+        }
+
+        $this->ukm->save($data);
+
+        session()->setFlashdata('success', 'Data berhasil diperbarui.'); //tambahkan ini
+
+        return redirect()->to('/ukm');
+    }
 }
