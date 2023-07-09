@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class UKMModel extends Model{
 
     protected $table = "tb_ukm";
-    protected $primarykey = "id_ukm";
+    protected $primaryKey = "id_ukm";
     protected $useAutoIncrement = true;
     protected $allowedFields = ['nama_ukm', 'logo_ukm', 'informasi', 'visi','misi','foto_satu','foto_dua']; 
     
@@ -15,6 +15,10 @@ class UKMModel extends Model{
         return $this->findAll();
     }
     
+    public function getDataById($id)
+    {
+        return $this->find($id);
+    }
     
     // public function getAllData()
     // {
