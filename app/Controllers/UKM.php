@@ -68,8 +68,27 @@ class UKM extends BaseController
                     'mime_in' => 'Tipe file pada Kolom Foto 2 harus berupa JPG, JPEG, atau PNG',
                     'max_size' => 'Ukuran file pada Kolom Foto 2 melebihi batas maksimum'
                 ]
+            ],
+            'informasi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Informasi harus diisi'
+                ]
+            ],
+            'visi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Visi harus diisi'
+                ]
+            ],
+            'misi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Misi harus diisi'
+                ]
             ]
         ]);
+        
         
 
         if (!$validation) {
@@ -145,8 +164,27 @@ class UKM extends BaseController
                     'mime_in' => 'Tipe file pada Kolom Foto 2 harus berupa JPG, JPEG, atau PNG',
                     'max_size' => 'Ukuran file pada Kolom Foto 2 melebihi batas maksimum'
                 ]
+            ],
+            'informasi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Informasi harus diisi'
+                ]
+            ],
+            'visi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Visi harus diisi'
+                ]
+            ],
+            'misi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Misi harus diisi'
+                ]
             ]
         ]);
+        
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
