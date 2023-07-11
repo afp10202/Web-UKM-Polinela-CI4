@@ -101,14 +101,14 @@
         function confirmDelete(ukmId){
             swal({
                     title: "Apakah Anda yakin?",
-                    text: "setelah dihapus! data anda akan benar-benar hilang!",
+                    text: "Setelah dihapus! data anda akan benar-benar hilang!",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
             })
             .then((willDelete) => {
                 if(willDelete) {
-                    window.location.href = "/ukm/destory" + (ukmId);
+                    window.location.href = "/ukm/destroy/" + ukmId;
                 } else {
                     swal("Data tidak jadi dihapus!");
                 }

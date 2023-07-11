@@ -38,12 +38,16 @@ class UKM extends BaseController
         $data["errors"] = session('errors');
         return view('update', $data);
     }
-    public function destory($id)
+
+    ///////////////////////
+    public function destroy($id)
     {
         $data['ukm'] = $this->ukm->delete($id);
         session()->setFlashdata('success', 'Data berhasil dihapus');
-        return redirect()->to('ukm/ukm');
+        return redirect()->to('ukm');
     }
+
+    ////////////////////
 
     public function insert()
     {
