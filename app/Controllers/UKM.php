@@ -34,6 +34,7 @@ class UKM extends BaseController
     }
     public function update($id) //tambah data
     { 
+        $decryptedId = decryptUrl($id);
         $data['semuaukm'] = $this->ukm->getDataById($id);
         $data["errors"] = session('errors');
         return view('update', $data);
@@ -42,8 +43,9 @@ class UKM extends BaseController
     ///////////////////////
     public function destroy($id)
     {
-        $data['ukm'] = $this->ukm->delete($id);
-        session()->setFlashdata('success', 'Data berhasil dihapus');
+        $decryptedId = decryptUrl($id);
+        $this->ukm->delete($decryptedId);
+        session()->setFlashdata('success', 'Data berhasil dihapus.');
         return redirect()->to('ukm');
     }
 
