@@ -87,7 +87,7 @@
                             </div>
                         </td>
                         <td>
-                            <a href="/ukm/update/<?= $ukm['id_ukm']; ?>" class="btn btn-sm btn-success">Update</a><br/>
+                            <a href="/ukm/update/<?= encryptUrl($ukm["id_ukm"]); ?>" class="btn btn-success">Update</a>
                             <a class="btn btn-sm btn-danger" onclick="return confirmDelete(<?= $ukm['id_ukm'] ?>)">Delete</a>
                         </td>
 
@@ -108,7 +108,7 @@
             })
             .then((willDelete) => {
                 if(willDelete) {
-                    window.location.href = "/ukm/destroy/" + ukmId;
+                    window.location.href = "/ukm/destroy/<?= encryptUrl($ukm['id']) ?>";
                 } else {
                     swal("Data tidak jadi dihapus!");
                 }
