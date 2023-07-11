@@ -108,7 +108,7 @@
             })
             .then((willDelete) => {
                 if(willDelete) {
-                    window.location.href = "/ukm/destroy/<?= encryptUrl($ukm['id']) ?>";
+                    window.location.href = "/ukm/destroy/<?= encryptUrl($ukmId['id']) ?>";
                 } else {
                     swal("Data tidak jadi dihapus!");
                 }
