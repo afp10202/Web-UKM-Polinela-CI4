@@ -40,7 +40,7 @@
                             <a class="nav-link" href="<?= base_url('/') ?>">Informasi UKM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('/ukm') ?>">Data UKM</a>
+                            <a class="nav-link" href="<?= base_url('/') ?>">Data UKM</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('/') ?>">Data Anggota</a>

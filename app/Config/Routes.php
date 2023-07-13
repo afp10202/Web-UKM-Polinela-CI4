@@ -31,6 +31,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'UKM::home');
 $routes->get('/ukm', 'UKM::ukm');
+$routes->get('/about', 'UKM::about');
 
 /*
  * --------------------------------------------------------------------
