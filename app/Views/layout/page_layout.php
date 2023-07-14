@@ -40,13 +40,13 @@
                             <a class="nav-link" href="<?= base_url('/') ?>">Informasi UKM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('/') ?>">Data UKM</a>
+                            <a class="nav-link" href="<?= base_url('ukm') ?>">Data UKM</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('/') ?>">Data Anggota</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('/') ?>">Tentang Kami</a>
+                            <a class="nav-link" href="<?= base_url('about') ?>">Tentang Kami</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav horizontal"> <!-- Changed class to 'horizontal' -->

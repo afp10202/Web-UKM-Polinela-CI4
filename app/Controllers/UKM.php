@@ -35,7 +35,7 @@ class UKM extends BaseController
     public function update($id) //tambah data
     { 
         $decryptedId = decryptUrl($id);
-        $data['semuaukm'] = $this->ukm->getDataById($id);
+        $data['semuaukm'] = $this->ukm->getDataById($decryptedId);
         $data["errors"] = session('errors');
         return view('update', $data);
     }
@@ -147,6 +147,8 @@ class UKM extends BaseController
     {
         return view('about');
     }
+
+
     public function edit()
     {
         $validation = $this->validate([

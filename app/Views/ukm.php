@@ -87,7 +87,7 @@
                             </div>
                         </td>
                         <td>
-                            <a href="/ukm/update/<?= encryptUrl($ukm["id_ukm"]); ?>" class="btn btn-success">Update</a>
+                            <a href="/ukm/update/<?= encryptUrl($ukm["id_ukm"]); ?>" class="btn btn-sm btn-success">Update</a>
                             <a class="btn btn-sm btn-danger" onclick="return confirmDelete(<?= $ukm['id_ukm'] ?>)">Delete</a>
                         </td>
 
