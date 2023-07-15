@@ -54,7 +54,7 @@
     </nav>
 
     <!-- Content -->
-    <div class="container-fluid mt-5 pt-5"> <!-- Added mt-5 and pt-5 for top margin and padding -->
+    <div class="container-fluid mt-5 pt-5 pb-5"> <!-- Added pb-5 for bottom padding -->
         <div class="row">
             <div class="col-12">
                 <?= $this->renderSection('content') ?> 
@@ -63,7 +63,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center mt-5 pt-5" padding= '10px';>
+    <footer class="footer text-center";>
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -12,7 +12,7 @@
                             <h1>Edit UKM</h1>
                         </div>
                         <div class="col-md-6 text-end">
-                            <a href="/ukm/" class="btn btn-dark">Kembali</a>
+                            <a href="/ukm" class="btn btn-dark">Kembali</a>
                         </div>
                     </div>
                 </div>
