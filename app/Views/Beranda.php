@@ -5,23 +5,27 @@
 <div class="container">
     <!-- Portfolio Section Heading-->
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Unit Kegiatan Mahasiswa Polinela</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-    <div class="row justify-content-center">
-        <?php foreach ($semuaukm as $ukm) : ?>
-            <div class="col-md-3">
-                <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#modal<?= $ukm['id_ukm'] ?>">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img src="/assets/logo/<?= $ukm['logo_ukm'] ?>" class="card-img-top" alt="Logo UKM">
-                </div>
-                <h5 class="card-title text-center"><?= $ukm['nama_ukm'] ?></h5>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
+        <div class="row justify-content-center">
+            <?php foreach ($semuaukm as $ukm) : ?>
+                <div class="col-md-3">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#modal<?= $ukm['id_ukm'] ?>">
+                        <div class="portfolio-item-content">
+                            <img src="/assets/logo/<?= $ukm['logo_ukm'] ?>" class="img-fluid logo" alt="Logo UKM">
+                            <h5 class="card-title text-center"><?= $ukm['nama_ukm'] ?></h5>
+                        </div>
+                        <div class="portfolio-item-overlay">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <!-- Modal -->
             <div class="modal fade" id="modal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">

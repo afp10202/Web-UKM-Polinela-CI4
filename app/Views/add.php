@@ -67,7 +67,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="link_ig" class="form-label">Link IG</label>
+                                        <label for="link_ig" class="form-label">Link Instagram</label>
                                         <input type="text" class="form-control <?= isset($errors['link_ig']) ? 'is-invalid' : ''; ?>" id="link_ig" name="link_ig" value="<?= old('link_ig'); ?>">
                                         <?php if (isset($errors['link_ig'])) : ?>
                                             <div class="invalid-feedback">
@@ -76,7 +76,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="link_yt" class="form-label">Link YT</label>
+                                        <label for="link_yt" class="form-label">Link Youtube</label>
                                         <input type="text" class="form-control <?= isset($errors['link_yt']) ? 'is-invalid' : ''; ?>" id="link_yt" name="link_yt" value="<?= old('link_yt'); ?>">
                                         <?php if (isset($errors['link_yt'])) : ?>
                                             <div class="invalid-feedback">

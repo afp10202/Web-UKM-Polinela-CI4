@@ -1,0 +1,1053 @@
+INFO - 2023-07-15 06:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:10:56 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:10:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:10:56 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:10:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:10:56 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:10:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:11:29 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:11:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:11:29 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:11:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:11:29 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:11:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:11:48 --> openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ï¹»ßLP§')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('zw25u99MUKf')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('zw25u99MUKf', 'yj4ozWV0ozZ2VG9nNFk5bC9ydmZHZTZWV0tCb3c9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:11:50 --> openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ï¹»ßLP§')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('zw25u99MUKf')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('zw25u99MUKf', 'yj4ozWV0ozZ2VG9nNFk5bC9ydmZHZTZWV0tCb3c9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:11:54 --> openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '¬“˜R' . "\0" . 'ƒÕPïk')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('rJOYUgCDF9VQEO9r')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('rJOYUgCDF9VQEO9r', '3ogHDhVWTFuT1NhVk5sc1BKaHAxb2wyZVE9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:00 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:00 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:00 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:04 --> openssl_decrypt(): IV passed is only 6 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 6 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'åH«Ñ\\')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('5Uir0Rdc')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('5Uir0Rdc', 'EsljafNk1HqGno3VmF3ci8vZTRzdTFUQllSeWFuM3c9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:08 --> openssl_decrypt(): IV passed is only 6 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 6 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'åH«Ñ\\')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('5Uir0Rdc')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('5Uir0Rdc', 'EsljafNk1HqGno3VmF3ci8vZTRzdTFUQllSeWFuM3c9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:12 --> openssl_decrypt(): IV passed is only 13 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 13 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '0¾æ¨Â„Ý
+a´s')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('ML4V5qjChN0KkGG0c+')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('ML4V5qjChN0KkGG0c+', 'iaFhEYk02amlDQWVvSDdkYUZoaCtVRFE9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:16 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:17 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:17 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:20 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:20 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:21 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:21 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:21 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:21 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:12:22 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:22 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:12:22 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:12:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:22 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ó(k§')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('0yhrp+')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('0yhrp+', 'sF7QI5HsPcYkYqkVGMDhyNnI2L3pJTDJ2Ny9TVVVDY3c9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:26 --> openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '3tìÄÉIù')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('M3TsGcTJSfm')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('M3TsGcTJSfm', 'YAGljtGwaHc2cWE4ZlVoRDZJcWd5SlcrZUgzQ1E9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:33 --> openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '3tìÄÉIù')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('M3TsGcTJSfm')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('M3TsGcTJSfm', 'YAGljtGwaHc2cWE4ZlVoRDZJcWd5SlcrZUgzQ1E9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:34 --> openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 8 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '3tìÄÉIù')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('M3TsGcTJSfm')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('M3TsGcTJSfm', 'YAGljtGwaHc2cWE4ZlVoRDZJcWd5SlcrZUgzQ1E9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:37 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:37 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:37 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:42 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:42 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:43 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:43 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:46 --> openssl_decrypt(): IV passed is only 3 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 3 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, '0+ñ')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('MCvxV')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('MCvxV', 'Q0Y8Z3iRLQlpwTGTRZakRnQ2VoRDBkd0F3dnN1aDkrTnc9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:50 --> openssl_decrypt(): IV passed is only 10 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 10 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'ÒMü¾&G˜Ž\\¾')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('0k38viZHmI5cvj')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('0k38viZHmI5cvj', 'yIklLpEg1UkR4dG9zSyt2RGxOOXRFY24vbEE9PQ==')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 06:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 06:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 06:13:55 --> openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'rË')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('css')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 2 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'r\xCB')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('css')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:56 --> openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'Ž')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('js')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 1 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, '\x8E')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('js')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-15 06:13:56 --> openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Helpers\url_helper.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Helpers\\url_helper.php', 19, [...])
+ 2 APPPATH\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#2023', 0, 'jË¶')
+ 3 APPPATH\Controllers\UKM.php(49): decryptUrl('assets')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+CRITICAL - 2023-07-15 06:13:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\API\ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Debug\Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+ã€Previous Exceptionã€‘
+ErrorException
+openssl_decrypt(): IV passed is only 4 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt...', 'C:\\Users\\user\\D...', 19, Array)
+#1 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Helpers\url_helper.php(19): openssl_decrypt('', 'AES-256-CBC', 'MYs3cR3tK3y#202...', 0, 'j\xCB\x1E\xB6')
+#2 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\app\Controllers\UKM.php(49): decryptUrl('assets')
+#3 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+#4 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+#5 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\user\Documents\GitHub\Web_UKM_Polinela\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#8 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-07-15 06:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 11:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 11:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 11:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 11:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 11:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
