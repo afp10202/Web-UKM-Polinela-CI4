@@ -91,7 +91,8 @@
                         </td>
                         <td style="text-align: center;">
                             <img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2"
-                            style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#fotoDuaModal<?= $ukm['id_ukm'] ?>">
+                            style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal"
+                            data-bs-target="#fotoDuaModal<?= $ukm['id_ukm'] ?>">
                             <!-- Modal -->
                             <div class="modal fade" id="fotoDuaModal<?= $ukm['id_ukm'] ?>"
                             tabindex="-1" aria-labelledby="fotoDuaModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
