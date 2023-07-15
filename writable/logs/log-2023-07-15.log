@@ -1852,3 +1852,48 @@ INFO - 2023-07-15 12:54:18 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-15 12:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-15 12:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-15 12:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 13:55:11 --> Undefined index: id_ukm
+in APPPATH\Views\update.php on line 24.
+ 1 APPPATH\Views\update.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ukm', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH\Controllers\UKM.php(52): view('update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('css', 'styles.css')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 13:55:11 --> Undefined index: id_ukm
+in APPPATH\Views\update.php on line 24.
+ 1 APPPATH\Views\update.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ukm', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH\Controllers\UKM.php(52): view('update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('js', 'scripts.js')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-15 13:55:11 --> Undefined index: id_ukm
+in APPPATH\Views\update.php on line 24.
+ 1 APPPATH\Views\update.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ukm', 'C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\app\\Views\\update.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('update', [], true)
+ 5 APPPATH\Controllers\UKM.php(52): view('update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\UKM->update('assets', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UKM))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Documents\\GitHub\\Web_UKM_Polinela\\public\\index.php')
+INFO - 2023-07-15 13:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-15 13:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
