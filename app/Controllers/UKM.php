@@ -3,17 +3,22 @@
 namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UKMModel;
+use App\Models\ContactModel;
 
 class UKM extends BaseController
 {
 
     protected $ukm;
+    protected $kontak;
+
 
     public function __construct()
     {
         $this->ukm = new UKMModel();
+        $this->kontak = new ContactModel();
     }
 
+   
     public function home()
     {
         $data['semuaukm'] = $this->ukm->getAllData();
@@ -25,6 +30,12 @@ class UKM extends BaseController
         $data['semuaukm'] = $this->ukm->getAllData();
         return view('ukm', $data);
     }
+
+    public function about()
+    {
+        return view('about');
+    }
+    
     
     public function add()
     { //tambah data
@@ -32,7 +43,8 @@ class UKM extends BaseController
         $data["errors"] = session('errors');
         return view('add', $data);
     }
-    public function update($id) //tambah data
+    
+    public function update($id) //update
     { 
         $decryptedId = decryptUrl($id);
         $data['semuaukm'] = $this->ukm->getDataById($decryptedId);
@@ -81,6 +93,27 @@ class UKM extends BaseController
                     'max_size' => 'Ukuran file pada Kolom Foto 2 melebihi batas maksimum'
                 ]
             ],
+            'email' => [
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'Kolom Email harus diisi',
+                    'valid_email' => 'Kolom Email harus berisi alamat email yang valid'
+                ]
+            ],
+            'link_ig' => [
+                'rules' => 'required|valid_url',
+                'errors' => [
+                    'required' => 'Kolom Link IG harus diisi',
+                    'valid_url' => 'Kolom Link IG harus berisi URL yang valid'
+                ]
+            ],
+            'link_yt' => [
+                'rules' => 'required|valid_url',
+                'errors' => [
+                    'required' => 'Kolom Link YT harus diisi',
+                    'valid_url' => 'Kolom Link YT harus berisi URL yang valid'
+                ]
+            ],
             'informasi' => [
                 'rules' => 'required',
                 'errors' => [
@@ -100,8 +133,6 @@ class UKM extends BaseController
                 ]
             ]
         ]);
-        
-        
 
         if (!$validation) {
             $errors = \Config\Services::validation()->getErrors();
@@ -112,17 +143,17 @@ class UKM extends BaseController
         $fotoSatu = $this->request->getFile('foto_satu');
         $fotoDua = $this->request->getFile('foto_dua');
 
-        if ($logoUkm && $logoUkm->isValid() && !$logoUkm->hasMoved()) {
+        if ($logoUkm->isValid() && !$logoUkm->hasMoved()) {
             $logoName = $logoUkm->getRandomName();
             $logoUkm->move(ROOTPATH . 'public/assets/logo/', $logoName);
         }
 
-        if ($fotoSatu && $fotoSatu->isValid() && !$fotoSatu->hasMoved()) {
+        if ($fotoSatu->isValid() && !$fotoSatu->hasMoved()) {
             $fotoSatuName = $fotoSatu->getRandomName();
             $fotoSatu->move(ROOTPATH . 'public/assets/foto/', $fotoSatuName);
         }
 
-        if ($fotoDua && $fotoDua->isValid() && !$fotoDua->hasMoved()) {
+        if ($fotoDua->isValid() && !$fotoDua->hasMoved()) {
             $fotoDuaName = $fotoDua->getRandomName();
             $fotoDua->move(ROOTPATH . 'public/assets/foto/', $fotoDuaName);
         }
@@ -138,15 +169,22 @@ class UKM extends BaseController
         ];
 
         $this->ukm->save($data);
+        $ukmId = $this->ukm->insertID();
+
+        $kontakData = [
+            'id_ukm' => $ukmId,
+            'email' => $this->request->getPost('email'),
+            'link_ig' => $this->request->getPost('link_ig'),
+            'link_yt' => $this->request->getPost('link_yt')
+        ];
+
+        $this->kontak->insert($kontakData);
+
         session()->setFlashdata('success', 'Data berhasil ditambahkan.');
         return redirect()->to('ukm');
     }
 
 
-    public function about()
-    {
-        return view('about');
-    }
 
 
     public function edit()
@@ -205,12 +243,16 @@ class UKM extends BaseController
             return redirect()->back()->withInput()->with('errors', $errors);
         }
 
-        // ambil data lama
-        $ukm = $this->ukm->find($this->request->getPost('id_ukm'));
+        // ambil data lama dari tabel UKM
+        $ukmId = $this->request->getPost('id_ukm');
+        $ukm = $this->ukm->getDataById($ukmId);
+
+        // ambil data kontak berdasarkan ID UKM
+        $kontak = $this->kontak->where('id_ukm', $ukmId)->first();
 
         // tambahkan request id
         $data = [
-            'id_ukm' => $this->request->getPost('id_ukm'),
+            'id_ukm' => $ukmId,
             'nama_ukm' => $this->request->getPost('nama_ukm'),
             'visi' => $this->request->getPost('visi'),
             'misi' => $this->request->getPost('misi'),
@@ -274,10 +316,20 @@ class UKM extends BaseController
             $data['foto_dua'] = $ukm['foto_dua'];
         }
 
+        // Update data pada tabel UKM
         $this->ukm->save($data);
 
-        session()->setFlashdata('success', 'Data berhasil diperbarui.'); //tambahkan ini
+        // Update data pada tabel Kontak
+        $kontakData = [
+            'email' => $this->request->getPost('email'),
+            'link_ig' => $this->request->getPost('link_ig'),
+            'link_yt' => $this->request->getPost('link_yt')
+        ];
+        $this->kontak->update($kontak['id_kontak'], $kontakData);
 
+        session()->setFlashdata('success', 'Data berhasil diperbarui.');
         return redirect()->to('/ukm');
     }
+
+
 }

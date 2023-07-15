@@ -21,6 +21,9 @@
                     <th scope="col">Informasi</th>
                     <th scope="col">Visi</th>
                     <th scope="col">Misi</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Link IG</th>
+                    <th scope="col">Link YT</th>
                     <th scope="col">Foto 1</th>
                     <th scope="col">Foto 2</th>
                     <th scope="col">Action</th>
@@ -60,6 +63,9 @@
                                 <p><?= $ukm['misi'] ?></p>
                             </div>
                         </td>
+                        <td style="font-size: 12px;"><?= $ukm['email'] ?></td>
+                        <td style="font-size: 12px;"><a href="<?= $ukm['link_ig'] ?>" target="_blank"><?= $ukm['link_ig'] ?></a></td>
+                        <td style="font-size: 12px;"><a href="<?= $ukm['link_yt'] ?>" target="_blank"><?= $ukm['link_yt'] ?></a></td>
                         <td style="text-align: center;">
                             <img src="/assets/foto/<?= $ukm['foto_satu'] ?>" alt="Foto 1" style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#fotoSatuModal<?= $ukm['id_ukm'] ?>">
                             <!-- Modal -->
@@ -101,7 +107,7 @@
         function confirmDelete(ukmId){
             swal({
                     title: "Apakah Anda yakin?",
-                    text: "Setelah dihapus! data anda akan benar-benar hilang!",
+                    text: "Setelah dihapus, data anda akan benar-benar hilang!",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,

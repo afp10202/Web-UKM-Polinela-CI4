@@ -2,7 +2,6 @@
 
 <?= $this->section('content') ?>
 
-<br>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -58,6 +57,33 @@
                                             </div>
                                         <?php endif; ?>
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control <?= isset($errors['email']) ? 'is-invalid' : ''; ?>" id="email" name="email" value="<?= old('email'); ?>">
+                                        <?php if (isset($errors['email'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['email'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="link_ig" class="form-label">Link IG</label>
+                                        <input type="text" class="form-control <?= isset($errors['link_ig']) ? 'is-invalid' : ''; ?>" id="link_ig" name="link_ig" value="<?= old('link_ig'); ?>">
+                                        <?php if (isset($errors['link_ig'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['link_ig'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="link_yt" class="form-label">Link YT</label>
+                                        <input type="text" class="form-control <?= isset($errors['link_yt']) ? 'is-invalid' : ''; ?>" id="link_yt" name="link_yt" value="<?= old('link_yt'); ?>">
+                                        <?php if (isset($errors['link_yt'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['link_yt'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -78,8 +104,7 @@
                                             </div>
                                         <?php endif; ?>
                                     </div>
-                                </div>
-                                    <div>
+                                    <div class="mb-3">
                                         <label for="informasi" class="form-label">Informasi</label>
                                         <textarea class="form-control <?= isset($errors['informasi']) ? 'is-invalid' : ''; ?>" id="informasi" name="informasi" cols="50" rows="6"><?= old('informasi'); ?></textarea>
                                         <?php if (isset($errors['informasi'])) : ?>
@@ -88,6 +113,7 @@
                                             </div>
                                         <?php endif; ?>
                                     </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">

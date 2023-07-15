@@ -89,6 +89,39 @@
                                         </div>
                                     </div>
 
+                                    <!-- Tambahkan input Email -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control <?= isset($errors['email']) ? 'is-invalid ' : ''; ?>" id="email" name="email" value="<?= isset($semuaukm['email']) ? $semuaukm['email'] : ''; ?>">
+                                        <?php if (isset($errors['email'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['email'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <!-- Tambahkan input Link YouTube -->
+                                    <div class="mb-3">
+                                        <label for="link_yt" class="form-label">Link YouTube</label>
+                                        <input type="url" class="form-control <?= isset($errors['link_yt']) ? 'is-invalid ' : ''; ?>" id="link_yt" name="link_yt" value="<?= isset($semuaukm['link_yt']) ? $semuaukm['link_yt'] : ''; ?>">
+                                        <?php if (isset($errors['link_yt'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['link_yt'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <!-- Tambahkan input Link Instagram -->
+                                    <div class="mb-3">
+                                        <label for="link_ig" class="form-label">Link Instagram</label>
+                                        <input type="url" class="form-control <?= isset($errors['link_ig']) ? 'is-invalid ' : ''; ?>" id="link_ig" name="link_ig" value="<?= isset($semuaukm['link_ig']) ? $semuaukm['link_ig'] : ''; ?>">
+                                        <?php if (isset($errors['link_ig'])) : ?>
+                                            <div class="invalid-feedback">
+                                                <?= $errors['link_ig'] ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
