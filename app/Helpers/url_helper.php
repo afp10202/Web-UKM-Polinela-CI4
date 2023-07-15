@@ -1,6 +1,5 @@
 <?php
 
-
 function encryptUrl($data)
 {
     $key = 'MYs3cR3tK3y#2023';

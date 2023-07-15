@@ -5,6 +5,10 @@
 <div class="container">
     <!-- Portfolio Section Heading-->
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Unit Kegiatan Mahasiswa Polinela</h2>
+    <h6 class="text-center">Selamat datang di Website Unit Kegiatan Mahasiswa Polinela! Website
+        ini merupakan sarana yang disediakan oleh Unit Kegiatan Mahasiswa (UKM) Polinela untuk
+        memperkenalkan dan menyajikan informasi seputar kegiatan yang dilakukan oleh para mahasiswa
+        di Politeknik Negeri Lampung (Polinela).</h6>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
