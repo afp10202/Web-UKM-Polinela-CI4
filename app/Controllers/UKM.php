@@ -56,9 +56,10 @@ class UKM extends BaseController
     public function destroy($id)
     {
         $decryptedId = decryptUrl($id);
+        $this->kontak->where('id_ukm', $decryptedId)->delete();
         $this->ukm->delete($decryptedId);
         session()->setFlashdata('success', 'Data berhasil dihapus.');
-        return redirect()->to('ukm');
+        return redirect()->to('/ukm');
     }
 
     ////////////////////

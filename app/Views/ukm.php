@@ -91,8 +91,7 @@
                         </td>
                         <td style="text-align: center;">
                             <img src="/assets/foto/<?= $ukm['foto_dua'] ?>" alt="Foto 2"
-                            style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal"
-                            data-bs-target="#fotoDuaModal<?= $ukm['id_ukm'] ?>">
+                            style="width: 50px; height: 50px; display: block; margin: 0 auto;" data-bs-toggle="modal"data-bs-target="#fotoDuaModal<?= $ukm['id_ukm'] ?>">
                             <!-- Modal -->
                             <div class="modal fade" id="fotoDuaModal<?= $ukm['id_ukm'] ?>"
                             tabindex="-1" aria-labelledby="fotoDuaModalLabel<?= $ukm['id_ukm'] ?>" aria-hidden="true">
@@ -109,7 +108,7 @@
                         <td>
                             <a href="/ukm/update/<?= encryptUrl($ukm["id_ukm"]); ?>" class="btn btn-sm btn-success">Update</a>
                             <br/>
-                            <a class="btn btn-sm btn-danger" onclick="return confirmDelete(<?= $ukm['id_ukm'] ?>)">Delete</a>
+                            <a class="btn btn-sm btn-danger" onclick="return confirmDelete()">Delete</a>
                         </td>
 
                     </tr>
@@ -129,7 +128,7 @@
             })
             .then((willDelete) => {
                 if(willDelete) {
-                    window.location.href = "/ukm/destroy/" + encryptUrl(ukmId);
+                    window.location.href = "/ukm/destroy/ + <?= encryptUrl($ukm["id_ukm"]); ?>";
                 } else {
                     swal("Data tidak jadi dihapus!");
                 }

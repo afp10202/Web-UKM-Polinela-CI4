@@ -25,13 +25,15 @@
                         </div>
                         <div class="portfolio-item-overlay">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
             <!-- Modal -->
-            <div class="modal fade" id="modal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modal<?= $ukm['id_ukm'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
