@@ -34,7 +34,7 @@ HASIL WEBSITE SAAT INI:
 
 
 
-LINK PRESENTASI YT :
+LINK PRESENTASI YT : https://youtu.be/e6zzWnBpeVc
 
 Maaf bila ada kekurangan, kami memohon maaf....
 Sekian dan Terima Kasih
