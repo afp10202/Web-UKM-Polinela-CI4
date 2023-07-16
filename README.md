@@ -15,12 +15,12 @@ Fitur Rancangan Website:
 •	Halaman utama yang menampilkan logo-logo UKM yang aktif di Polinela.
 •	Ketika pengunjung mengklik logo UKM, akan muncul informasi terkait UKM tersebut, seperti nama, deskripsi, visi, misi, kegiatan, dan kontak.
 •	Memudahkan pengunjung untuk mendapatkan gambaran singkat tentang UKM yang ada dan menemukan UKM yang menarik minat mereka.
-2.	Data UKM:
+3.	Data UKM:
 •	Halaman yang menampilkan data UKM dalam bentuk tabel.
 •	Tabel tersebut mencakup kolom-kolom seperti nama UKM, deskripsi, visi, misi, kegiatan, dan kontak.
 •	Fitur ini hanya dapat diakses oleh Admin sebagai pengelola data UKM.
 •	Admin memiliki akses untuk menambahkan data UKM baru, mengedit informasi UKM yang sudah ada, serta menghapus data UKM.
-3.	Tentang Kami:
+6.	Tentang Kami:
 •	Halaman yang memberikan informasi rinci tentang Website Unit Kegiatan Mahasiswa Polinela.
 •	Menjelaskan peran dan kontribusi dari Unit Kegiatan Mahasiswa Polinela dalam memajukan kehidupan mahasiswa di Polinela.
 
